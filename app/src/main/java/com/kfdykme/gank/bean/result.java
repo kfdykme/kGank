@@ -1,8 +1,9 @@
 package com.kfdykme.gank.bean;
 
 import java.util.*;
+import com.orm.*;
 
-public class result
+public class result 
 {
 	private String _id;
 	

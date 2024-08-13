@@ -17,11 +17,11 @@ public class DataText extends LinearLayout
 	
 	public DataText(Context context, AttributeSet attrs){
 		super(context,attrs);
-		LayoutInflater.from(context).inflate(R.layout.dataitemlayout, this);
+		LayoutInflater.from(context).inflate(R.layout.listview_dataitem, this);
 		
-		descTextView = (TextView)findViewById(R.id.dataitemlayoutDescTextView);
-		dateTextView = (TextView)findViewById(R.id.dataitemlayoutDateTextView);
-		whoTextView = (TextView)findViewById(R.id.dataitemlayoutWhoTextView);
+		descTextView = (TextView)findViewById(R.id.listview_dataitem_descText);
+		dateTextView = (TextView)findViewById(R.id.listview_dataitem_datetext);
+		whoTextView = (TextView)findViewById(R.id.listview_dataitem_whotext);
 		
 	}
 	

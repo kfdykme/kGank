@@ -7,9 +7,8 @@ import android.view.*;
 import com.kfdykme.gank.*;
 import android.view.View.*;
 import com.kfdykme.gank.bean.*;
-import com.kfdykme.gank.model.*;
 
-public  class kWebView  extends LinearLayout 
+public  class KWebView  extends LinearLayout 
 {
 	private WebSettings wb ;
 	
@@ -35,14 +34,21 @@ public  class kWebView  extends LinearLayout
 	
 	private result loadResult;
 	
-	
-	
-	public kWebView(Context context){
-		this(context,null);
-	}
 
-	public kWebView(Context context, AttributeSet attrs){
+	private KGankMainPresenter mPresenter;
+	
+	
+	public KWebView(Context context ){
+		
+		this(context, null);
+	
+	}
+	
+	
+	public KWebView(Context context, AttributeSet attrs){
 		super(context,attrs);
+		
+		
 		LayoutInflater.from(context).inflate(R.layout.kwebviewlayout, this);
 
 		wv = (WebView)findViewById(R.id.kwebviewlayoutWebView);
@@ -125,9 +131,6 @@ public  class kWebView  extends LinearLayout
 				@Override
 				public void onClick(View p1)
 				{
-					gankModel gM = new gankModel(null);
-					
-					gM.addLiked(getLoadResult(),getContext());
 					Log.i("onCLikc","ITV");
 					// TODO: Implement this method
 				}

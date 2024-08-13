@@ -1,12 +1,11 @@
 package com.kfdykme.gank.bean;
 import java.util.*;
 
-public class dataEntity
+public class DataEntity
 {
 	private String error;
-	
+
 	private List<result> results;
-	
 
 
 	public void setError(String error)
@@ -34,7 +33,7 @@ public class dataEntity
 	{
 		return "dataEntity { error : "+ error +", results : " + results +"}";
 	}
-	
-	
-	
+
+
+
 }

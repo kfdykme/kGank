@@ -2,23 +2,15 @@ package com.kfdykme.gank;
 
 
 import android.os.*;
-import android.widget.*;
-import android.view.View.*;
-import android.view.*;
-import okhttp3.*;
-import org.json.*;
-import com.kfdykme.gank.bean.*;
-import java.util.*;
-import com.google.gson.*;
 import android.support.v4.app.*;
 import android.support.v4.view.*;
+import android.view.*;
 import com.kfdykme.gank.view.*;
-import android.webkit.*;
 import com.orm.*;
-import android.content.*;
+import java.util.*;
 
 
-public class MainActivity extends FragmentActivity 
+public class KGankMainActivity extends FragmentActivity 
 {
 	//scared me
 	
@@ -30,7 +22,7 @@ public class MainActivity extends FragmentActivity
 	
 	private FragmentPagerAdapter mAdapter;
 	
-	private List<VPSFragment> mContents = new ArrayList<VPSFragment>();
+	private List<KGankFragment> mContents = new ArrayList<KGankFragment>();
 	
 	
 	
@@ -38,7 +30,7 @@ public class MainActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+//		requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
 		
 		SugarContext.init(this);
@@ -54,22 +46,6 @@ public class MainActivity extends FragmentActivity
 		mVPIndicator.setViewPager(mViewPager,0);
 	
 //
-//		for(VPSFragment v: mContents){
-//			v.getUdaButton().setOnLongClickListener(new OnLongClickListener(){
-//
-//					@Override
-//					public boolean onLongClick(View p1)
-//					{
-//						Intent i = new Intent(MainActivity.this,likedActivity.class);
-//						startActivity(i);
-//						return false;
-//					}
-//
-//
-//				});
-//			
-//		} 
-		
 	}
 
 	@Override
@@ -87,8 +63,8 @@ public class MainActivity extends FragmentActivity
 	private void initDatas()
 	{
 		for(String title:mTitles){
-			VPSFragment fragment = VPSFragment.newInstance(title);
-			fragment.setMTitle(title);
+			KGankFragment fragment = KGankFragment.newInstance(title);
+			fragment.setTitle(title);
 			mContents.add(fragment);	
 			
 		}

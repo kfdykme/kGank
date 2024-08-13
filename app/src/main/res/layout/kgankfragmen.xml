@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<com.kfdykme.gank.view.KWebView
+		android:id="@+id/kgankfragmen_KWebView"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:background="#ff6600"
+		android:visibility="gone"/>
+	
+	
+	<FrameLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<Button
+			android:background="#03a9f4"
+			android:alpha="0.7"
+			android:id="@+id/vpsfragmentlayoutuDaButton"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="uDa"
+			android:textColor="#fffff0"
+			android:layout_gravity="bottom|right"
+			android:layout_margin="20dp"/>
+
+		<ProgressBar
+			android:id="@+id/kgankfragmenProgressBar"
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="200dp"
+			android:layout_marginTop="300dp"/>
+
+		<TextView
+			android:id="@+id/kgankfragmenLoadingTextView"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:text="Loading Data."
+			android:gravity="center"
+			android:layout_gravity="right"
+			android:layout_marginLeft="300dp"/>
+
+		<ListView
+			android:id="@+id/kgankfragmen_ListView"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:visibility="gone"
+			/>
+
+	</FrameLayout>
+
+
+</LinearLayout>
+

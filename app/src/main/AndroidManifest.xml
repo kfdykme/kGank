@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".KGankMainActivity"
             android:label="@string/app_name" >
 
 			<intent-filter>
@@ -27,16 +27,7 @@
             </intent-filter>
         </activity>
 		
-		<activity
-			android:name=".likedActivity"
-            android:label="@string/app_name" 
-			>
-		</activity>
-		<activity
-            android:name=".LoadingActivity"
-            android:label="@string/app_name" >
-			
-        </activity>
-    </application>
+	
+		</application>
 
 </manifest>
